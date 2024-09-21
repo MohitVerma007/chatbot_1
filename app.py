@@ -83,4 +83,4 @@ async def generate_response(request: Request):
 # Launch Gradio in a separate thread so it doesn't block the API
 if __name__ == "__main__":
     threading.Thread(target=launch_gradio, daemon=True).start()
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app, host="https://chatbot-1-eight.vercel.app/")
